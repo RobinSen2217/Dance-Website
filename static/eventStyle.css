@@ -1,0 +1,16 @@
+/* Styling both Events page & contactSubmitted Page */
+
+div{
+    height: 79.2vh;
+    padding-left: 15px;
+}
+
+/* Styling Return btn of contactSubmitted Page */
+.btn{
+    border-radius: 4px;
+    padding: 2px 4px;
+background-color: rgb(130, 246, 92);
+}
+.btn:hover{
+    cursor: pointer;
+}

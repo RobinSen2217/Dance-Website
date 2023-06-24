@@ -1,0 +1,23 @@
+extends base.pug
+
+block title 
+    title #{title}-Footwork
+
+block style 
+    style
+        include ../static/style.css
+        include ../static/contactStyle.css
+    
+block script 
+    script 
+        include ../static/index.js
+
+block content
+    h1#contactHead Contact Us & Tell Us Your Concern
+    form#contactForm(action="/Contact", method="post" autocomplete="off") 
+        input.input(id='name' name='name' type="text",placeholder='Enter your name...' )
+        input.input(id='phone' name='phone' type='text',placeholder='Enter your phone number...')
+        input.input(id='email' name='email' type="email",placeholder='Enter your email...')
+        input.input(id='address' name='address' type="text", placeholder="Enter your address...")
+        input.input(id='concern' name='concern' type='text',placeholder="Enter your concern...")     
+        input#submit(type="submit", value="Submit")

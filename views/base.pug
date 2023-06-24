@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    block title  
+    block style 
+
+  body
+    nav#nav 
+            img(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8R62ruAWFgXOKGPoYiuxQ6M83Ja2oC1LT47iqFnqkIO-iwQvlWE9R7dqMJO1-1TQD-ks&usqp=CAU", alt="Logo")
+            h3 Footwork
+            ul#navlist 
+                li #[a(href='/', id='home') Home] 
+                li #[a(href='/Contact', id='contact') Contact Us] 
+                li #[a(href='/Events', id='events') Events]
+    block content
+    footer#Foot
+        |  © Copyright 2015 RobinTheBird.com | All rights reserved | Designed by #[span Robin Sen]
+    block script

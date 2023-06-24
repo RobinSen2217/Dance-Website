@@ -1,0 +1,18 @@
+extends base.pug
+
+block title 
+    title #{title}-Footwork
+block style 
+    style
+        include ../static/style.css
+        include ../static/eventStyle.css        
+    
+block script 
+    script 
+        include ../static/index.js
+
+block content 
+    div
+        h1 Your form has been submitted 
+        p We'll look into your concern and revert to you as soon as possible.Till then, Keep Up the Footwork!!! 
+        button.btn(type='button', onclick='window.location.pathname="/Contact"') Return to Contact page

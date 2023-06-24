@@ -1,0 +1,41 @@
+#contactHead{
+    text-align: center;
+}
+#contactForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 71.2vh;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.input{
+    width: 360px;
+    font-size: 20px;
+    padding: 8px 10px 10px 7px;
+        border: double 4px transparent;
+        border-radius: 25px;
+        background-image: linear-gradient(white, white), 
+                          linear-gradient(to right, rgb(85, 0, 255), rgb(38, 255, 0));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+}
+.input:focus{
+    background-image: none;
+    outline: none;
+    border: 4px solid transparent;
+    box-shadow: 4px 4px 15px -2px rgb(38, 255, 0),-4px -4px 15px 0px  rgb(28, 3, 61);
+}
+
+#submit{
+    font-size: 20px;
+    background-image: linear-gradient(to right,rgb(234, 14, 14),rgb(235, 107, 10),rgb(186, 213, 8));
+    padding: 7px 20px;
+    border-radius: 12px;
+    border-width: 0cap;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(61, 7, 96),rgb(18, 10, 235),rgb(8, 196, 213));
+    color: wheat;
+    cursor: pointer;
+}
